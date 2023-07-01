@@ -1,4 +1,14 @@
 # Headless Wifi Manager
+
+This repository is based upon the work of the Wideverse team. The original repository can be found [here](https://github.com/wideverse/headless-wifi-manager).
+
+This repository has been updated due to the fact that the original repository was not maintained anymore.
+
+## Changes
+
+- Updated to WifiUtils v1.6.6
+
+# Presentation
 <img src="https://github.com/wideverse/headless-wifi-manager/blob/master/images/demo01.png" width="200"> <img src="https://github.com/wideverse/headless-wifi-manager/blob/master/images/demo02.png" width="200"><img src="https://github.com/wideverse/headless-wifi-manager/blob/master/images/demo03.png" width="200">
 
 <img src="https://github.com/wideverse/headless-wifi-manager/blob/master/images/demo04.png" width="200"><img src="https://github.com/wideverse/headless-wifi-manager/blob/master/images/demo05.png" width="200"> <img src="https://github.com/wideverse/headless-wifi-manager/blob/master/images/demo06.png" width="200">
