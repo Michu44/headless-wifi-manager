@@ -31,6 +31,8 @@ import com.google.android.gms.nearby.Nearby
 import com.google.android.gms.nearby.connection.*
 import com.google.gson.Gson
 import com.thanosfisherman.wifiutils.WifiUtils
+import com.thanosfisherman.wifiutils.wifiConnect.ConnectionErrorCode
+import com.thanosfisherman.wifiutils.wifiConnect.ConnectionSuccessListener
 import java.lang.Exception
 import java.nio.charset.Charset
 
@@ -182,17 +184,22 @@ class  HeadlessWifiManager{
         WifiUtils.withContext(applicationContext)
             .connectWith(payload.theChosenOne!!.result!!.SSID, payload.theChosenOne!!.password)
             .setTimeout(30000)
-            .onConnectionResult {
-                sendWifiConnectionAck(payload.theChosenOne!!.result!!.SSID, it)
-
-                if (it){
+            .onConnectionResult(object : ConnectionSuccessListener {
+                override fun success() {
+                    // Connected to WiFi
+                    sendWifiConnectionAck(payload.theChosenOne!!.result!!.SSID, true)
                     advertisingCallback.onSuccess()
-                }else {
+                }
+
+                override fun failed(errorCode: ConnectionErrorCode) {
+                    // Failed to connect to WiFi
                     advertisingCallback.onError(Exception("Unable to connect to WiFi"))
                 }
-            }.start()
+            })
+            .start()
     }
-
+    
+    
     private fun sendWifiConnectionAck(name: String, ackResult: Boolean) {
         val genericPayload = GenericPayload().apply {
             id = HeadlessWifiManagerConstants.PAYLOAD_WIFI_ACK_ID
