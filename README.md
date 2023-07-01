@@ -170,5 +170,28 @@ The adveriser module DOESN'T have an UI since the device is supposed to be headl
 
 JavaDoc is available [here](https://wideverse.github.io/headless-wifi-manager/headlesswifimanager/).
 
+
+## How to contribute
+
+If you want to contribute to this repository, please follow the following steps:
+- Fork this repository
+- Create a new branch
+- Make your changes
+- Create a pull request
+
+## How to submit an issue
+
+If you want to submit an issue, please follow the following steps:
+- Go to the [issues](https://github.com/Michu44/headless-wifi-manager/issues) page
+- Click on the "New issue" button
+- Fill in the form
+- Submit the issue
+
 # About
-This library has been developed at [Wideverse](https://www.wideverse.com/it/home-it/) @ [Polytechnic University of Bari](https://www.poliba.it/) and it's shared under Apache 2.0.
+
+This repository is maintained by 
+- [Michael Lopez](https://github.com/Michu44)
+- [AVA Innovations Inc](https://github.com/AVA-brn)
+- [EasyCode-IT AG](https://www.easycode-it.com)
+
+The first version of this library has been developed at [Wideverse](https://www.wideverse.com/it/home-it/) @ [Polytechnic University of Bari](https://www.poliba.it/) and it's shared under Apache 2.0.
