@@ -179,6 +179,12 @@ If you want to contribute to this repository, please follow the following steps:
 - Make your changes
 - Create a pull request
 
+## How to setup the local environment
+
+- [Install SDKMAN](https://sdkman.io/install)
+- Install Gradle 6.9.4 `sdk install gradle 6.9.4`
+- Install Java `sdk install java 11.0.14.1-jbr`
+
 ## How to submit an issue
 
 If you want to submit an issue, please follow the following steps:
