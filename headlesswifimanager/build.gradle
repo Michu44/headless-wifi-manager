@@ -15,14 +15,13 @@
  */
 
 apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android-extensions'
 apply plugin: 'kotlin-android'
 apply plugin: 'org.jetbrains.dokka-android'
 
 
 android {
     compileSdkVersion 28
-
-    namespace 'com.wideverse.headlesswifimanager'
 
     compileOptions {
         sourceCompatibility 1.8
