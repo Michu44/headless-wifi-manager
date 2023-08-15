@@ -197,7 +197,5 @@ If you want to submit an issue, please follow the following steps:
 
 This repository is maintained by 
 - [Michael Lopez](https://github.com/Michu44)
-- [AVA Innovations Inc](https://github.com/AVA-brn)
-- [EasyCode-IT AG](https://www.easycode-it.com)
 
 The first version of this library has been developed at [Wideverse](https://www.wideverse.com/it/home-it/) @ [Polytechnic University of Bari](https://www.poliba.it/) and it's shared under Apache 2.0.
